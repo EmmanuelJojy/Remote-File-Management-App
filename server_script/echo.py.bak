@@ -1,0 +1,51 @@
+import socket
+import os
+
+HOST = ''  
+PORT = 65432
+
+class Command(object):
+    def __init__(self, id, conn, addr):
+        self.id = id
+        self.conn = conn
+        print(f'[{id}] {addr[0]}:{addr[1]}')
+        
+    def execute(self, data):
+        if data[0:2] == cd:
+            return os.path.dirname(os.path.abspath(__file__))
+        pass
+        
+
+
+obj = None
+serverStatus = True
+flag = True
+
+while(serverStatus):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((HOST, PORT))
+        s.listen()
+        if flag:
+            print(f'\n=== SERVER LIVE ===\n')
+            flag = False
+        conn, addr = s.accept()
+        with conn:
+            id = conn.recv(1024).decode('utf-8')
+            obj = Command(id, conn, addr)
+            
+            while True:
+                # Continuous Recieve Only Logic
+                raw = conn.recv(1024)
+                
+                data = raw.decode('utf-8')
+                print(f'  $ {data}')
+                
+                if data == 'end':
+                    print(f'[{id}] Logout')
+                    break
+                elif data == 'shutdown':
+                    print(f'\n=== SERVER DOWN ===')
+                    serverStatus = False
+                    break
+                obj.execute(data)
+                conn.sendall(raw) 
