@@ -63,6 +63,14 @@ class _ActionCardState extends State<ActionCard> {
             }
           },
         );
+      } else if (widget.buttonText == 'Execute') {
+        soc.sendMessage('rc $name', listen: true);
+        Future.delayed(Duration(milliseconds: SharedData.timeDelay))
+            .then((value) => SharedData.pool == '0'
+                ? setStateOfDialog(() {
+                    operationStatus = false;
+                  })
+                : Navigator.pop(context));
       }
     }
   }

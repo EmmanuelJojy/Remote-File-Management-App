@@ -11,7 +11,7 @@ Server actions avoid direct native system calls making the server platform indep
 > :triangular_flag_on_post: All server actions on directory `./reactor/`   
 > :electric_plug: Default port is set to `:65432`.  
 
-### Server Programming Interface:  
+ Server Programming Interface:  
 | Server Action | Command | Response |
 | --- | --- |  -------- |
 | Create File | `cf {filename}`  | `1` indicating successful operation else `0` |  
