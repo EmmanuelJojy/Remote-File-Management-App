@@ -13,7 +13,7 @@ Server actions avoid direct native system calls making the server platform indep
 
 ### Server Programming Interface:  
 | Server Action | Command | Response |
-| --- | --- |  --- |
+| --- | --- |  -------- |
 | Create File | `cf {filename}`  | `1` indicating successful operation else `0` |  
 | View File | `vf {filename}`  | `{file data} 1` if  successful else `0`  
 | Delete File | `df {filename}`  | `1` indicating successful operation else `0` |  
