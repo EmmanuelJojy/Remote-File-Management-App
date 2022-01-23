@@ -26,12 +26,15 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
 :hourglass_flowing_sand: Default communication timeout set to `500ms`.
 
 ## Sample Project Screenshots
-![Server Screenshot Here](/assets/server_live.png) Server Live with **MyDevice** connected.
-| ![Server Screenshot Here](/assets/client_1.png) | ![Server Screenshot Here](/assets/client_2.png) | ![Server Screenshot Here](/assets/client_3.png) | ![Server Screenshot Here](/assets/client_4.png) | ![Server Screenshot Here](/assets/client_5.png) |
+![Server Screenshot](/assets/server_live.png) Server Live with **MyDevice** connected.
+| ![Client Screenshot](/assets/client_1.png) | ![Client Screenshot](/assets/client_2.png) | ![Client Screenshot](/assets/client_3.png) | ![Client Screenshot](/assets/client_4.png) | ![Client Screenshot](/assets/client_5.png) |
 | --- | --- | --- | --- | --- |
-| ![Server Screenshot Here](/assets/client_6.png) | ![Server Screenshot Here](/assets/client_7.png) | ![Server Screenshot Here](/assets/client_8.png) | ![Server Screenshot Here](/assets/client_10.png) | ![Server Screenshot Here](/assets/client_9.png) |
+| ![Client Screenshot](/assets/client_6.png) | ![Client Screenshot](/assets/client_7.png) | ![Client Screenshot](/assets/client_8.png) | ![Client Screenshot](/assets/client_10.png) | ![Client Screenshot](/assets/client_9.png) |
   
 **1** Connection Page | **2** Home page (a) | **3** Create file error | **4** Create File | **5** View File Page | **6** Edit File Page | **7** Edit Status Dialog | **8** Home Page (b) | **9** Raw Command Dialog | **10** Connection Page Error
+
+Repository set to **private**.  
+Made with :heart: by Emmanuel Jojy.
 
 
 
