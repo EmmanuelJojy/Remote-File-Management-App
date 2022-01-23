@@ -16,6 +16,7 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
 :hourglass_flowing_sand: Default communication timeout set to `500ms`. Unexpected error can be anticipated if timeout is `> 500ms`.
 
 ## Project Screenshots
-> ![This is an image](/assets/server_live.png)
+![This is an image](/assets/server_live.png)
+
 
 
