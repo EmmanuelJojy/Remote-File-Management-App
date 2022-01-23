@@ -53,6 +53,13 @@ class Command(object):
                 resp = '1'
             except:
                 resp = '0'
+        elif command == 'rc':
+            try:
+                lt = data.split(' ')
+                subprocess.Popen(lt)
+                resp = '1'
+            except:
+                resp = '0'
         else:
             resp = 'UNDEFINED'
 
@@ -75,6 +82,9 @@ while(serverStatus):
         s.bind((HOST, PORT))
         s.listen()
         if flag:
+            reactor = os.path.join(PATH, 'reactor')
+            if(not os.path.exists(reactor)):
+                os.mkdir(reactor)
             print(f'\n=== SERVER LIVE ===\n')
             flag = False
         conn, addr = s.accept()
