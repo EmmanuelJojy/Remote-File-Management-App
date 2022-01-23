@@ -16,7 +16,7 @@ class Command(object):
     def execute(self, data):
         command, send = data[0:2], ''
         data = data[3:]
-        loc = os.path.join(PATH, f'demo/{data}')
+        loc = os.path.join(PATH, f'reactor/{data}')
         if command == 'cd':
             resp = PATH
         elif command == 'cf':
@@ -44,7 +44,8 @@ class Command(object):
             index = data.find(' ')
             file = data[:index]
             data = data[index + 1:]
-            loc = os.path.join(PATH, f'demo/{file}')
+            loc = os.path.join(PATH, f'reactor/{file}')
+            loc = os.path.join(PATH, f'reactor/{file}')
             try:
                 fp = open(loc, 'w')
                 fp.write(data)

@@ -14,6 +14,7 @@ Server actions avoid direct native system calls making the server platform indep
 ## Client Side Program
 Client side leverages the functionalities of Flutter Framework and Dart combined. The TCP logic is purely based on dart or specifically `Socket` class of  `dart:io` library.  
 :heavy_check_mark: `android.permission.INTERNET` granted at install time for targeted android devices.  
-:hourglass_flowing_sand: Default communication timeout set to `500ms`. Unexpected error can be anticipated if by some reason timeout is `> 500ms`.
+:hourglass_flowing_sand: Default communication timeout set to `500ms`. Unexpected error can be anticipated if timeout is `> 500ms`.
+
 
 
