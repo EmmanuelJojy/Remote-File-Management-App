@@ -33,12 +33,6 @@ class _HomePageState extends State<HomePage> {
     Navigator.pop(context);
     return true;
   }
-  
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
