@@ -18,7 +18,8 @@ Server actions avoid direct native system calls making the server platform indep
 | View File | `vf {filename}`  | `{file data} 1` if  successful else `0`  
 | Delete File | `df {filename}`  | `1` indicating successful operation else `0` |  
 | Edit File | `cf {filename} {data}`  | `1` indicating successful operation else `0` |  
-| Request Path | `cd`  | Absolute Server Path. (Time out of `500ms`) |
+| Request Path | `cd`  | Absolute Server Path. (Time out of `500ms`) |  
+| Execute Command | `rc` | :test_tube:  Execute raw command on the server. `1` indicating successful operation else `0` | 
 
 ## Client Side Program
 Client side leverages the functionalities of Flutter Framework and Dart combined. The TCP logic is purely built over dart or specifically using `Socket` class of  `dart:io` library.  
