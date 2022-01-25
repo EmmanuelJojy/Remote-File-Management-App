@@ -25,7 +25,7 @@ class ViewPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: availHeight * 0.2,
+                height: availHeight * 0.2 <= 125 ? availHeight * 0.2 : 125,
                 child: const FileCard(),
               ),
               Container(

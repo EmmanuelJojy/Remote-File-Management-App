@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   bool notValidInput = false;
   Connection? connection;
   final idController = TextEditingController(text: 'MyDevice');
-  final ipController = TextEditingController(text: '192.168.1.205');
+  final ipController = TextEditingController(text: '192.168.1.207');
   final portController = TextEditingController(text: '65432');
 
   void _validateAddress() async {

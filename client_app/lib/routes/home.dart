@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Container(
                 padding: const EdgeInsets.all(5),
-                height: availHeight * 0.2,
+                height: availHeight * 0.2 <= 125 ? availHeight * 0.2 : 125,
                 child:
                     ActionCard('Server Executing At', '', subTitle: serverPath),
               ),
