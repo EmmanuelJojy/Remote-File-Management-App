@@ -14,12 +14,16 @@ Server actions avoid direct native system calls making the server platform indep
  Server Programming Interface:  
 | Server Action | Command | Response |
 | --- | --- |  -------- |
+| Request Path | `cd`  | Absolute Server Path. (Time out of `500ms`) |   
 | Create File | `cf {filename}`  | `1` indicating successful operation else `0` |  
 | View File | `vf {filename}`  | `{file data} 1` if  successful else `0`  
 | Delete File | `df {filename}`  | `1` indicating successful operation else `0` |  
-| Edit File | `cf {filename} {data}`  | `1` indicating successful operation else `0` |  
-| Request Path | `cd`  | Absolute Server Path. (Time out of `500ms`) |  
-| Execute Command | `rc` | :test_tube:  Execute raw command on the server. `1` indicating successful operation else `0` | 
+| Edit File | `cf {filename} {data}`  | `1` indicating successful operation else `0` |   
+| Execute Command | `rc {command}` | Execute command on the server. `1` indicating successful operation else `0` |   
+| Log Out | `end` | Closes the active connection. |   
+| Shutdown Server | `shutdown` | Disconnect and shutdown the server. |  
+
+
 
 ## Client Side Program
 Client side leverages the functionalities of Flutter Framework and Dart combined. The TCP logic is purely built over dart or specifically using `Socket` class of  `dart:io` library.  
@@ -34,8 +38,9 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
   
 **1** Connection Page | **2** Home page (a) | **3** Create file error | **4** Create File | **5** View File Page | **6** Edit File Page | **7** Edit Status Dialog | **8** Home Page (b) | **9** Raw Command Dialog | **10** Connection Page Error
 
-Repository set to **private**.  
-Made with :heart: by Emmanuel Jojy.
+Created as part of ** S5 Computer Networks Project**.  
+ 
+Made with :heart: by Emmanuel Jojy, Jerin Paul and Jobin Sebastian.
 
 
 
