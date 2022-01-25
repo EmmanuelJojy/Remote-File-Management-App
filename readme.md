@@ -38,9 +38,13 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
   
 **1** Connection Page | **2** Home page (a) | **3** Create file error | **4** Create File | **5** View File Page | **6** Edit File Page | **7** Edit Status Dialog | **8** Home Page (b) | **9** Raw Command Dialog | **10** Connection Page Error
 
-Created as part of ** S5 Computer Networks Project**.  
- 
-Made with :heart: by Emmanuel Jojy, Jerin Paul and Jobin Sebastian.
+## References
+* [Socket Programming - Real Python](https://realpython.com/python-sockets/)
+* [Flutter Development - Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  
+
+---
+Created as part of **S5 Computer Networks Project**.  
+Made with :heart: by **Emmanuel Jojy**, **Jerin Paul** and **Jobin Sebastian**.
 
 
 
