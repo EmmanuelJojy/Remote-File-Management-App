@@ -44,7 +44,7 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
 
 ---
 Created as part of **S5 Computer Networks Project**.  
-Made with :heart: by **Emmanuel Jojy**, **Jerin Paul** and **Jobin Sebastian**.
+Made with :heart: by **Emmanuel Jojy**.
 
 
 
