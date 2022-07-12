@@ -43,7 +43,6 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
 * [Flutter Development - Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  
 
 ---
-Created as part of **S5 Computer Networks Project**.  
 Made with :heart: by **Emmanuel Jojy**.
 
 
