@@ -40,7 +40,11 @@ Client side leverages the functionalities of Flutter Framework and Dart combined
 
 ## References
 * [Socket Programming - Real Python](https://realpython.com/python-sockets/)
-* [Flutter Development - Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  
+* [Flutter Development - Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
+
+## Archived Repository
+
+It has been decided the repository be archived after long-time inactivity. The repository will be archived on the July 1st, 2023.
 
 ---
 Made with :heart: by **Emmanuel Jojy**.
